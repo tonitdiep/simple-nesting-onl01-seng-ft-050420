@@ -117,6 +117,7 @@ end
 def adding_to_dennis
 
 	programmer_hash = 
+
  		{
         :grace_hopper => {
           :known_for => "COBOL",
@@ -128,11 +129,10 @@ def adding_to_dennis
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C", "Assembly"]
+          :languages => ["C"]
         }
      }
-# programmer_hash[:dennis_ritchie][:languages]
-# programmer_hash
-# binding.pry
+  
+  programmer_hash[:dennis_ritchie][:languages] << "Assembly"
+  programmer_hash
 end
-
